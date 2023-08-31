@@ -1,0 +1,82 @@
+/* The following applies globally. */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color:#ecdcb0;
+    margin:0px;
+}
+
+#title {
+    color: #4A6C6F;
+    text-align: center;
+    font-size: 70px;
+    margin: 0rem 0rem 0rem 0rem;
+    padding-bottom: 2rem;
+    font-family: verdana;
+    text-shadow: 2px 2px white;
+    border-bottom: solid 2px black
+}
+
+/* The following applies to the index.html page. */
+#content {
+    display: flex;
+    justify-content: space-around;
+    justify-content: left;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.index {
+    width: calc(100%/4 - 4rem);
+    border: solid 1px black;
+    text-align: center;
+    padding: 1rem;
+    margin:2rem;
+    background-color: white;
+    box-shadow: 5px 5px black;
+}
+
+.index > a {
+    font-size: 30px;
+    color:red;
+}
+
+/* The following applies to the selected page. */
+#selected > div {
+    display:flex;
+    justify-content: center;
+}
+
+.selectedContent {
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.selectedContent > a {
+    display:inline-block;
+    color:red;
+    font-size: 50px;
+    background-color: white;
+    border: solid 1px black;
+    box-shadow: 5px 5px black;
+    padding: 1rem;
+    margin-top:1rem;
+}
+
+.selectedContent > img {
+    height: 65vh;
+}
+
+.selectedContent > h1 {
+    font-size:40px;
+    margin: 0rem;
+}
+
+.selectedContent > p {
+    font-size: 30px;
+    margin: 0rem;
+}
