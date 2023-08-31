@@ -38,6 +38,10 @@ render();
 
 //Hash Change event.
 window.addEventListener("hashchange",(event) => {
+    //The back button triggers the hashchange event. This if statement reloads the page.
+    if(window.location.pathname === "/index.html" && window.location.hash === ""){
+        location.reload();
+    }
     displayPlayer(window.location.hash);
 })
 
@@ -59,5 +63,3 @@ function displayPlayer(hash){
     content.innerHTML = "";
     selected.innerHTML = html;
 }
-
-//Bug to be fixed: If you go from index.html to index.html#hashnumber the back button won't display the players again on index.html.
